@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>noted.app — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      background: #F8F7F3;
+      color: #232629;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #14100E; color: #F2F2EF; }
+      a { color: #A3B1A6; }
+      .meta { color: #A3A39D; }
+      h2 { border-bottom-color: rgba(242,242,239,0.14); }
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    h1 { color: #2F3F38; font-size: 28px; margin-bottom: 4px; }
+    .meta { color: #5C5C58; font-size: 14px; margin-bottom: 32px; }
+    h2 {
+      font-size: 18px;
+      margin-top: 36px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(20,20,20,0.12);
+    }
+    a { color: #2F3F38; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective July 30, 2026</p>
+
+    <p>
+      noted.app ("noted", "we", "us") is a personal library app for iOS and Android: you save
+      things you want to keep — shared links, screen recordings, voice notes, photos, and text —
+      and noted automatically transcribes, organizes, and files them into folders for you. This
+      policy explains what data that requires and how it's handled.
+    </p>
+
+    <h2>What we collect</h2>
+    <ul>
+      <li><strong>Account information</strong>: your email address, used to sign in and identify your account.</li>
+      <li><strong>Content you save</strong>: links, video/audio recordings, photos, and text you choose to add to your library, plus the transcripts, AI-generated summaries, and folder assignments generated from that content.</li>
+      <li><strong>Basic usage data</strong>: how much you've saved this month (used only to apply the free plan's monthly transcription limit — see below).</li>
+      <li><strong>Feedback</strong>: anything you submit through the in-app Feedback form.</li>
+    </ul>
+    <p>We do not collect advertising identifiers, and we do not sell or share your data with data brokers or advertisers.</p>
+
+    <h2>How your content is processed</h2>
+    <p>Saving something to your library requires sending it to a small number of service providers, strictly to provide the app's own features:</p>
+    <ul>
+      <li><strong>Supabase</strong> — hosts your account, your library's data, and the files you save (videos, audio, images), encrypted in transit and at rest.</li>
+      <li><strong>OpenAI</strong> — transcribes audio/video (Whisper), and generates the summaries, structured notes, and AI chat answers you see in the app (GPT-4o-mini and text embeddings). Content sent for these purposes is used only to generate your results, not to train OpenAI's models under their API data usage terms.</li>
+    </ul>
+    <p>Your library is private to your account. Row-level security scopes every query to your own signed-in user — nobody else, including us, can browse your saved content through the app.</p>
+
+    <h2>Subscriptions and payment</h2>
+    <p>
+      noted offers an optional paid subscription (noted Pro) for unlimited transcription and AI
+      chat. Purchases are handled entirely by Apple's App Store or Google Play, using RevenueCat
+      to manage subscription status. We never see or store your payment card details — Apple and
+      Google process those directly under their own privacy policies.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>You can delete any saved item from within the app.</li>
+      <li>You can permanently delete your account and everything in it from Settings → Delete Account. This immediately and irreversibly removes your account, entries, recordings, transcripts, and folders.</li>
+      <li>You can contact us at any time using the details below with questions about your data.</li>
+    </ul>
+
+    <h2>Children's privacy</h2>
+    <p>noted is not directed at children under 13, and we do not knowingly collect data from children under 13.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes in a material way, we'll update the effective date above. Continued use of the app after a change means you accept the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy or your data: <a href="mailto:notedapphelp@gmail.com">notedapphelp@gmail.com</a></p>
+  </main>
+</body>
+</html>
