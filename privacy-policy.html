@@ -40,7 +40,7 @@
 <body>
   <main>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective September 14, 2026</p>
+    <p class="meta">Effective September 14, 2026. Updated September 24, 2026 to name the analytics, crash reporting and email providers.</p>
 
     <p>
       noted.app ("noted", "we", "us") is a personal library app for iOS. You save things you want
@@ -68,6 +68,13 @@
       <li><strong>Supabase</strong> — hosts your account, your library's database records, and the files you save (your own recordings, voice notes, and photos). Data is encrypted in transit and at rest, and every request is scoped by row-level security to your own signed-in account.</li>
       <li><strong>OpenAI</strong> — transcribes audio and video (Whisper), and generates the summaries, structured notes, and Ask answers you see (GPT-4o and GPT-4o-mini), plus the search embeddings. Content sent for these purposes is used only to generate your results — under OpenAI's API terms it is not used to train their models, and is retained by OpenAI for at most 30 days for abuse monitoring before deletion.</li>
       <li><strong>Trigger.dev</strong> — runs the background job that fetches and processes a shared link. It handles third-party media only transiently; see below.</li>
+    </ul>
+    <p>A few more services receive limited information that is not your saved content:</p>
+    <ul>
+      <li><strong>PostHog</strong>: product analytics. It receives events about how the app is used (for example: opened the app, saved an item, an import failed), tied to your account identifier. These events never contain the text of your notes or saved content, and never a full link you saved. Like any service you connect to, it also sees your IP address in the request.</li>
+      <li><strong>Sentry</strong>: crash and error reports. A report holds the technical stack trace, the screens and actions that led up to it, and your device model and OS version. It does not include your email address, your account identifier, or the content of your library.</li>
+      <li><strong>Resend</strong>: delivers email on our behalf, meaning the confirmation and password reset emails for your account and the emails our in-app feedback form sends us.</li>
+      <li><strong>Apple</strong> and <strong>RevenueCat</strong>: handle subscriptions. Apple processes the payment. RevenueCat receives your subscription status and an identifier so the app knows whether Pro is active. We never receive your card details.</li>
     </ul>
     <p>Your library is private to your account. Nobody else — including us — can browse your saved content through the app. There is no feed, no sharing between accounts, and no public links.</p>
 
